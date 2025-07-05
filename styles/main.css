@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "Martian Mono";
+    src: url("../font/martian-mono-variable.ttf");
+}
+
+/* Styling for tags */
+
+body {
+    background-color: black;
+    color: rgb(251, 135, 78);
+    overflow-x: hidden;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Martian Mono", monospace;
+}
+
+p {
+    margin: 0px !important
+}
+
+a {
+    text-decoration: none;
+    color: rgb(251, 135, 78);
+}
+
+li {
+    list-style: none;
+    margin-top: 30px;
+}
+
+menu {
+    padding: 0;
+}
+
+hr {
+    align-self: stretch;
+    border: 1.5px solid rgb(251, 135, 78);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Common styling */
+
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.box {
+    width: 0%;
+    height: 0%;
+    border: 3px solid;
+    height: 600px;
+    width: 400px;
+    padding: 25px;
+}
+
+.indent {
+    padding-left: 1ch;
+}
+
+.avatar {
+    max-height: 140px;
+    max-width: 140px;
+}
+
+.link-underline {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+}
+
+/* Page specific styling */
+
+.home-grid {
+    display: grid;
+    grid-template-rows: 1fr 3fr 0.5fr;
+}
+
+.home-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.home-footer  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: stretch;
+    row-gap: 5px;
+}
+
+.home-link {
+    font-size: 1.4em;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-rows: 0.5fr 3fr;
+}
+
+.about-header {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+}
+
+.about-header-back {
+    text-align: right;
+    position: relative;
+}
